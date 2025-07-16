@@ -1,0 +1,582 @@
+/* --- Stellar Core Designs - landing-style.css --- */
+
+:root {
+    --primary-color: #A855F7;
+    --secondary-color: #F472B6;
+    --background-dark: #0F0F1A;
+    --background-light: #1A1A2E;
+    --text-light: #E0E0E0;
+    --text-dark: #333333;
+    --success-color: #2dd4bf;
+    --font-primary: 'Orbitron', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.7);
+}
+
+h1 {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h2.section-title {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    margin-bottom: 3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    max-width: 650px; /* For readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- Simplified Header --- */
+.landing-header {
+    padding: 1rem 5%;
+    background: var(--background-dark);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    color: #FFF;
+    font-weight: bold;
+}
+.logo-img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+/* --- Hero Section --- */
+#landing-hero {
+    padding: 6rem 5% 8rem;
+    text-align: center;
+    background: var(--background-dark) url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="10" cy="10" r="1" fill="%23fff" opacity="0.3"/%3E%3Ccircle cx="80" cy="20" r="0.5" fill="%23fff" opacity="0.3"/%3E%3Ccircle cx="30" cy="70" r="1.5" fill="%23fff" opacity="0.2"/%3E%3Ccircle cx="90" cy="90" r="1" fill="%23fff" opacity="0.4"/%3E%3Ccircle cx="50" cy="50" r="0.5" fill="%23fff" opacity="0.3"/%3E%3C/svg%3E');
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: #FFF !important;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.6);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.cta-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 30px rgba(244, 114, 182, 0.7);
+}
+.pulse {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.cta-subtext {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 5rem 5%;
+}
+
+/* --- Benefits Section --- */
+#benefits {
+    background-color: var(--background-light);
+}
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.benefit-item {
+    text-align: center;
+}
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.benefit-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Showcase Section --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.portfolio-item {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- How It Works Section --- */
+#how-it-works {
+    background-color: var(--background-light);
+}
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.step {
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+.step-number {
+    width: 60px;
+    height: 60px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+}
+.step h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+.step-arrow {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    opacity: 0.5;
+}
+
+/* --- Pricing Section --- */
+#pricing {
+    background: linear-gradient(180deg, var(--background-dark) 0%, #2c1a4c 100%);
+}
+.pricing-card {
+    max-width: 550px;
+    margin: 0 auto;
+    background: var(--background-light);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.4);
+}
+.pricing-mascot {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+.pricing-card h2 {
+    font-size: 2rem;
+}
+.price {
+    font-size: 4rem;
+    font-family: var(--font-primary);
+    color: var(--success-color);
+    margin: 1rem 0;
+    text-shadow: 0 0 15px var(--success-color);
+}
+.features-list {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+.features-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+.features-list i {
+    color: var(--success-color);
+    margin-right: 10px;
+}
+.payment-info {
+    margin-top: 2rem;
+    text-align: center; /* This is the line that fixes it */
+
+}
+.payment-icons {
+    font-size: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* --- Testimonials Section --- */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.testimonial {
+    background: var(--background-light);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-color);
+}
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.testimonial .author {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* --- Footer --- */
+.landing-footer {
+    text-align: center;
+    padding: 2rem 5%;
+    background: var(--background-dark);
+    border-top: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+/* --- Animations & Responsive --- */
+.fade-in { animation: fadeIn 1s ease-in-out forwards; opacity: 0; }
+.fade-in-delay-1 { animation: fadeIn 1s ease-in-out 0.5s forwards; opacity: 0; }
+@keyframes fadeIn { to { opacity: 1; } }
+
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .step-arrow {
+        transform: rotate(90deg);
+        margin: 1rem 0;
+    }
+    .pricing-card {
+        padding: 2rem;
+    }
+}
+/* --- CSS Additions for Brief & Thank You Pages --- */
+
+/* --- Brief Form Page --- */
+#creative-brief {
+    padding: 4rem 5%;
+}
+.brief-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--background-light);
+    padding: 2rem 3rem;
+    border-radius: 15px;
+}
+.brief-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.brief-header h1 {
+    font-size: 2.5rem;
+}
+.brief-header p {
+    font-size: 1.1rem;
+    max-width: 100%;
+}
+
+fieldset {
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+legend {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    padding: 0 1rem;
+    color: var(--primary-color);
+}
+legend i {
+    margin-right: 10px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--background-dark);
+    border: 1px solid rgba(224, 224, 224, 0.2);
+    border-radius: 5px;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    background: var(--background-dark);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(224, 224, 224, 0.2);
+    transition: all 0.3s;
+}
+.checkbox-group label:hover {
+    border-color: var(--primary-color);
+}
+.checkbox-group input {
+    margin-right: 10px;
+    accent-color: var(--primary-color);
+}
+
+.submission-area {
+    text-align: center;
+    margin-top: 2rem;
+}
+.submission-area p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* --- Thank You Page --- */
+#thank-you {
+    text-align: center;
+    padding: 6rem 5%;
+}
+.thank-you-content .success-icon {
+    font-size: 6rem;
+    color: var(--success-color);
+    text-shadow: 0 0 20px var(--success-color);
+    margin-bottom: 2rem;
+}
+.thank-you-content h1 {
+    font-size: 2.8rem;
+}
+.thank-you-content p {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+}
+.back-to-home {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+.back-to-home:hover {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+/* --- Add this to your landing-style.css file --- */
+
+/* This makes sure the particle animation sits behind your text content */
+#landing-hero {
+    position: relative; /* This is the key change */
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Sits behind the content */
+}
+
+/* This makes sure your text content sits on top of the animation */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+/* --- Style for Pricing Disclaimer Box --- */
+
+.disclaimer-box {
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 2rem 0; /* Increased margin for better spacing */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--secondary-color); /* Uses your pink accent color */
+    text-align: left; /* Ensures text is left-aligned */
+}
+
+.disclaimer-box i {
+    font-size: 1.5rem;
+    color: var(--secondary-color); /* Uses your pink accent color */
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+.disclaimer-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 100%; /* Overrides the default max-width for p tags */
+    color: var(--text-light);
+    opacity: 0.9;
+}
+
+/* --- Styles for New Two-Tier Pricing Section --- */
+
+#pricing {
+    background: linear-gradient(180deg, var(--background-dark) 0%, #2c1a4c 100%);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: stretch; /* Makes cards the same height */
+}
+
+/* On larger screens, switch to a two-column layout */
+@media (min-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.pricing-card {
+    max-width: none; /* Remove max-width to fill the grid cell */
+    margin: 0;
+    background: var(--background-light);
+    padding: 2.5rem; /* Adjusted padding */
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    display: flex;
+    flex-direction: column; /* Allows footer to stick to bottom */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05); /* Make the popular option stand out */
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.5);
+    position: relative;
+}
+
+.pricing-card:not(.popular) {
+    border-color: rgba(168, 85, 247, 0.3);
+}
+
+.pricing-card .features-list {
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.plan-popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Style for the secondary button */
+.cta-button-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--primary-color);
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.cta-button-outline:hover {
+    background: var(--primary-color);
+    color: #FFF;
+}

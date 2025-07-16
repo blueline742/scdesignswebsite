@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/154ad64e2e3aedfc239bcf45/script.js"></script> <!-- End cookieyes banner -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Core Designs - Creative Brief</title>
+    <meta name="robots" content="noindex, nofollow"> <!-- Prevents search engines from finding this page -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Link to your landing page CSS file -->
+    <link rel="stylesheet" href="landing-style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="scd.png" type="image/png">
+    
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '259805993685047');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=259805993685047&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+</head>
+<body>
+
+    <!-- Simplified Header -->
+    <header class="landing-header">
+        <div class="logo">
+            <img src="scd.png" alt="Stellar Core Designs Mascot" class="logo-img">
+            Stellar Core Designs
+        </div>
+    </header>
+
+    <!-- Brief Form Section -->
+    <section id="creative-brief">
+        <div class="brief-container">
+            <div class="brief-header">
+                <h1>Welcome Aboard, Future Star!</h1>
+                <p>Thank you for your order! This is the final step. Please fill out the brief below to give our designers a clear vision for your new logo.</p>
+            </div>
+
+            <form id="brief-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- IMPORTANT: Replace with your Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="94334b62-6636-4d1a-89cb-a99e42e401a7"> 
+                <!-- Redirect to your thank you page -->
+                <!-- UPDATED LINK -->
+                <input type="hidden" name="redirect" value="https://www.stellarcoredesigns.com/thank-you">
+                <input type="hidden" name="subject" value="New Logo Design Creative Brief Submitted">
+
+
+                <!-- Section 1: About Your Business -->
+                <fieldset>
+                    <legend><i class="fas fa-building"></i> About Your Business</legend>
+                    <div class="form-group">
+                        <label for="company-name">What is the exact name of your company?</label>
+                        <input type="text" id="company-name" name="company_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tagline">Do you have a tagline? (Optional)</label>
+                        <input type="text" id="tagline" name="tagline">
+                    </div>
+                    <div class="form-group">
+                        <label for="industry">What industry are you in?</label>
+                        <input type="text" id="industry" name="industry" placeholder="e.g., Coffee Shop, Tech Startup, Fitness Coach" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="target-audience">Describe your ideal customer or target audience.</label>
+                        <textarea id="target-audience" name="target_audience" rows="3" required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Section 2: Design Preferences -->
+                <fieldset>
+                    <legend><i class="fas fa-palette"></i> Design Preferences</legend>
+                    <div class="form-group">
+                        <label>Choose the styles that best describe your desired logo:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="style[]" value="Modern"> Modern</label>
+                            <label><input type="checkbox" name="style[]" value="Minimalist"> Minimalist</label>
+                            <label><input type="checkbox" name="style[]" value="Classic"> Classic</label>
+                            <label><input type="checkbox" name="style[]" value="Playful"> Playful</label>
+                            <label><input type="checkbox" name="style[]" value="Luxury"> Luxury</label>
+                            <label><input type="checkbox" name="style[]" value="Bold"> Bold</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="colors">What colors would you like to see? (Be specific if you can, e.g., "deep navy blue, gold")</label>
+                        <input type="text" id="colors" name="colors">
+                    </div>
+                     <div class="form-group">
+                        <label for="inspiration">Please provide links to any logos you admire (e.g., on Pinterest, competitor sites).</label>
+                        <textarea id="inspiration" name="inspiration" rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Section 3: Additional Information -->
+                <fieldset>
+                    <legend><i class="fas fa-lightbulb"></i> Final Details</legend>
+                    <div class="form-group">
+                        <label for="notes">Is there anything else we should know? Any specific icons, symbols, or ideas to include or avoid?</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Submission -->
+                <div class="submission-area">
+                    <p>Please double-check your answers before submitting.</p>
+                    <button type="submit" class="cta-button">Launch My Project <i class="fas fa-rocket"></i></button>
+                    <div id="form-result"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="landing-footer">
+        <p>&copy; 2024 Stellar Core Designs. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Simple form submission feedback script
+        const form = document.getElementById('brief-form');
+        const result = document.getElementById('form-result');
+
+        form.addEventListener('submit', function(e) {
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.innerHTML = 'Launching... Please Wait...';
+            // The rest of the submission logic is handled by the Web3Forms redirect.
+            // This is just for user feedback while the page redirects.
+        });
+    </script>
+
+</body>
+</html>

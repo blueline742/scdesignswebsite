@@ -1,0 +1,95 @@
+Of course. This is the perfect upsell because it's incredibly valuable to your client but very fast and easy for you to create, especially since you're already using Canva. It's the definition of a high-margin service.
+
+A "Social Media Kit" is a set of ready-to-use graphics, perfectly sized for different social media platforms, that ensures a brand looks consistent and professional online.
+
+Here is a step-by-step guide on how to create a great "Social Media Starter Kit" in Canva.
+
+What's in the Kit?
+For a starter kit, you should provide two key things:
+
+Profile Pictures: The circular/square icon for each platform.
+
+Cover/Banner Photos: The wide rectangular image at the top of a profile.
+
+You'll make these for the most popular platforms for UK businesses: Facebook and Instagram.
+
+Step 1: The Profile Picture (The Easiest Part)
+The goal here is to make the client's logo look great in a small circle.
+
+Open Canva and click "Create a design".
+
+Search for "Instagram Profile Photo" or use a custom size of 1080 x 1080 pixels. This square format works perfectly for Facebook, Instagram, X, LinkedIn, etc.
+
+Import the Logo: Upload the final logo you created for the client into your Canva project.
+
+Create Two Versions:
+
+Version A (The Icon): If the logo has a distinct icon or symbol part, place that symbol in the center of the 1080x1080 canvas. Make it large and centred. This is often the best option for very small profile pictures on mobile phones.
+
+Version B (The Full Logo): Place the full logo (icon + text) in the center. Make sure there is plenty of empty space around it. Do not have the logo touch the edges. This ensures it won't get cut off when Facebook or Instagram applies a circular mask to it.
+
+Add a Background: Give the canvas a solid background color that matches the client's brand (e.g., the main color from their logo, or just plain white/black).
+
+Export: Download both versions as a PNG file. Name them clearly, like IG_Profile_Picture_Icon.png and FB_Profile_Picture_FullLogo.png.
+
+Pro Tip: Canva has a feature to check how your design will look in a circle. Click on File > View settings > Show rulers and guides, then add a circular frame from the "Elements" tab to your canvas and place your logo inside to preview it.
+
+Step 2: The Cover/Banner Photos
+These are the wide images at the top of a profile. The key is to keep important information in the "safe zone" so it's not cut off on mobile devices.
+
+For Facebook:
+Create a New Design: In Canva, search for "Facebook Cover". It will give you the perfect dimensions (usually 1640 x 924 pixels).
+
+Design the Banner: This is where you can add value. Don't just paste the logo. Create a simple, professional banner.
+
+Place the logo on one side (e.g., the left or right).
+
+Add the client's key business information on the other side. This is what makes it so useful for them! Use text boxes to add their:
+
+Website (e.g., www.davesplumbing.co.uk)
+
+Phone Number (e.g., 07123 456789)
+
+A key service or slogan (e.g., "24/7 Emergency Call Outs" or "The Best Barbers in Bristol").
+
+Use a simple background – either a brand colour or a subtle, professional stock photo from Canva's library.
+
+Check the Safe Zone: Remember that on mobile, Facebook crops the sides of the cover photo. Keep all your text and the logo in the central part of the canvas to ensure it's always visible. Canva's templates usually have guides showing this safe area.
+
+Export: Download as a PNG and name it Facebook_Cover_Photo.png.
+
+For Instagram:
+Instagram doesn't have a "cover photo" in the same way, but you can provide a set of Highlight Covers. These are the little circles that appear on a profile below the bio.
+
+Create a New Design: In Canva, search for "Instagram Story Highlight Cover". The size will be 1080 x 1920 pixels.
+
+Design the Covers: The goal is simplicity.
+
+Set the background to one of the client's brand colours.
+
+Go to "Elements" in Canva and find simple icons that represent the services the client offers. For a tradesman, you might find icons for a wrench, a tap, a lightbulb. For a cafe, a coffee cup, a croissant, etc.
+
+Place one large icon in the center of each cover. Make them all the same size and style. Use the brand's secondary colour or white/black for the icon itself.
+
+Create a Set: Make 3-5 of these highlight covers for common topics like "Services," "Contact," "Reviews," "Pricing," etc.
+
+Export: Download each one as a separate PNG file (e.g., Highlight_Services.png, Highlight_Contact.png).
+
+Step 3: Packaging and Delivery
+You're not just selling images; you're selling a convenient package.
+
+Create a Folder: On your computer, create a folder named [ClientName]_Social_Media_Kit.
+
+Organize into Subfolders: Inside that main folder, create subfolders:
+
+Profile Pictures
+
+Facebook Cover
+
+Instagram Highlight Covers
+
+Place Your Files: Put the PNGs you exported from Canva into the appropriate folders.
+
+Deliver as a .zip file: Compress the main folder into a single .zip file. This is what you will email or send to your client. It's professional and keeps everything tidy.
+
+This whole process, once you get the hang of it, should take you no more than 30-45 minutes per client, making it a very profitable addition to your £49 logo package.
