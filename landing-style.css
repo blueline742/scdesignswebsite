@@ -151,23 +151,121 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* --- Showcase Section --- */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    max-width: 1000px;
+/* --- NEW: Carousel Showcase Section --- */
+#showcase {
+    background-color: var(--background-dark);
+}
+
+.portfolio-slider-container {
+    position: relative;
+    max-width: 1300px;
     margin: 0 auto;
 }
-.portfolio-item {
-    border-radius: 10px;
-    overflow: hidden;
+
+.slider-track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
-.portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+
+.portfolio-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background-color: rgba(168, 85, 247, 0.2); /* This creates the border between items */
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.logo-item {
+    background-color: #161625; /* A dark, neutral background from your theme */
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.logo-item:hover {
+    background-color: var(--background-light); /* Slightly lighter on hover */
+}
+
+.logo-item img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.slider-arrow {
+    display: none; /* Hidden on desktop */
+}
+
+.showcase-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* --- Mobile Carousel Styles --- */
+@media (max-width: 1024px) {
+    .slider-track {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+        gap: 1rem;
+        padding-bottom: 1rem; /* Space for scrollbar if it appears */
+        /* Hide the scrollbar */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+    }
+    .slider-track::-webkit-scrollbar {
+        display: none; /* Chrome/Safari/Opera */
+    }
+
+    .portfolio-group {
+        width: 85%;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+    }
+
+    .slider-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        background: rgba(15, 15, 26, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #FFF;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    .slider-arrow.prev {
+        left: -10px;
+    }
+    .slider-arrow.next {
+        right: -10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-group {
+        width: 100%; /* Full width on very small screens */
+    }
+     .slider-arrow.prev {
+        left: 5px;
+    }
+    .slider-arrow.next {
+        right: 5px;
+    }
 }
 
 /* --- How It Works Section --- */
@@ -579,4 +677,180 @@ legend i {
 .cta-button-outline:hover {
     background: var(--primary-color);
     color: #FFF;
+}
+
+/* --- UPGRADED: "How It Works" Process Section --- */
+#how-it-works {
+    background-color: var(--background-light);
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 600px;
+    margin: -2rem auto 3rem; /* Positions it neatly under the title */
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.process-card {
+    background: radial-gradient(circle at 50% 0%, rgba(168, 85, 247, 0.1), rgba(168, 85, 247, 0.0) 70%);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(168, 85, 247, 0.5);
+    box-shadow: 0 10px 40px rgba(168, 85, 247, 0.2);
+}
+
+.process-card .process-number {
+    font-family: var(--font-primary);
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(224, 224, 224, 0.2); /* Subtle starting color */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.process-card:hover .process-number {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px var(--primary-color);
+}
+
+.process-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.process-card p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for process steps */
+@media (max-width: 992px) {
+    .process-arrow {
+        display: none; /* Hide arrows on smaller screens */
+    }
+    .process-step {
+        flex-basis: 45%; /* Two items per row on tablets */
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 576px) {
+    .process-step {
+        flex-basis: 100%; /* One item per row on mobile */
+    }
+}
+
+/* --- NEW: Scrolling Reviews/Testimonials Section --- */
+#reviews {
+    background-color: var(--background-dark);
+    padding: 5rem 0; /* Adjust padding for marquee */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-350px * 4)); /* Card width + gap * number of cards */
+    }
+}
+
+.reviews-marquee {
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+}
+
+.reviews-track {
+    display: flex;
+    width: calc(350px * 8); /* Card width + gap * double the number of cards */
+    animation: scroll 40s linear infinite;
+}
+
+.reviews-marquee:hover .reviews-track {
+    animation-play-state: paused;
+}
+
+.review-card {
+    width: 320px; /* Fixed width */
+    margin: 0 15px; /* Gap between cards */
+    background: var(--background-light);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.review-author {
+    line-height: 1.3;
+    flex-grow: 1;
+}
+.review-author strong {
+    color: #FFF;
+    font-weight: 600;
+}
+.review-author span {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.review-platform i {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.review-rating {
+    color: #FFC107; /* Gold color for stars */
+}
+
+.review-card p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.9;
 }
