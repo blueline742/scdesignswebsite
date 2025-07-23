@@ -117,6 +117,7 @@ nav {
     height: 50px;
     margin-right: 15px;
     transition: transform 0.4s ease-in-out;
+    will-change: transform;
 }
 
 .logo:hover .logo-img {
@@ -335,6 +336,7 @@ section {
 .about-image img {
     max-width: 80%;
     animation: float 6s ease-in-out infinite;
+    will-change: transform;
 }
 
 .about-content {

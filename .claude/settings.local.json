@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:stellarcoredesigns.com)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

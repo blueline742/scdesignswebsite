@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get More Customers Online - Stellar Core Designs</title>
+    <meta name="description" content="Stop losing customers to slow, outdated websites. Get a professional, fast-loading website that actually brings in business. £0 down, £49.99/month. Book your free consultation now.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"></noscript>
+
+    <!-- Font Awesome for Icons -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Link to main CSS file -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Additional styles for landing page -->
+    <style>
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .comparison-problem {
+            border: 2px solid #ef4444 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        /* Desktop pricing card styling */
+        .single-pricing-container {
+            display: flex;
+            justify-content: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .single-pricing-container .pricing-plan {
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        /* Logo bar styling */
+        .logo-bar {
+            overflow: hidden;
+            padding: 2rem 0;
+            background: rgba(26, 26, 46, 0.5);
+            margin-top: 2rem;
+        }
+        
+        .logo-scroll {
+            display: flex;
+            animation: scroll 20s linear infinite;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .logo-item {
+            flex-shrink: 0;
+            height: 60px;
+            width: auto;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+        
+        .logo-item:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        @media (max-width: 768px) {
+            .logo-item {
+                height: 45px;
+            }
+            
+            /* Hide desktop consultation layout on mobile */
+            .desktop-consultation {
+                display: none !important;
+            }
+            
+            /* Show mobile consultation layout */
+            .mobile-consultation {
+                display: block !important;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            /* Show desktop consultation layout */
+            .desktop-consultation {
+                display: grid !important;
+            }
+            
+            /* Hide mobile consultation layout on desktop */
+            .mobile-consultation {
+                display: none !important;
+            }
+        }
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" href="scd.png" type="image/png">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section id="web-hero">
+        <div class="hero-content">
+            <h1>Is Your Website Losing You Customers?</h1>
+            <div style="background: rgba(255, 193, 7, 0.2); border: 2px solid #ffc107; padding: 0.8rem; border-radius: 10px; margin: 1.5rem 0; color: #ffc107; font-weight: bold;">
+                ⚠️ Limited availability: Only 5 client spots left this month
+            </div>
+            <p>Stop losing business to slow, outdated websites. Get a professional, fast-loading site that actually brings in customers - for just £49.99/month with a small £49 setup fee.</p>
+            <div style="margin: 1.5rem 0; padding: 1rem; background: rgba(168, 85, 247, 0.1); border-radius: 10px; color: var(--text-light); font-size: 1rem;">
+                ⭐ 98/100 Google Speed Scores Guaranteed | ⭐ Trusted by 50+ UK Businesses
+            </div>
+            <a href="#calendly-booking" class="cta-button">Book Free Consultation</a>
+            <div style="margin-top: 2rem;">
+                <p style="color: var(--primary-color); font-family: var(--font-primary); font-size: 1.3rem; font-weight: bold;">
+                    <i class="fas fa-calendar-alt"></i> Book your free consultation below
+                </p>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </section>
+
+    <!-- Problem vs Solution -->
+    <section id="core-features">
+        <h2 class="section-title">WordPress vs Hand-Coded Websites</h2>
+        <div class="comparison-container">
+            <!-- Problem Side -->
+            <div class="pricing-plan comparison-problem">
+                <div class="plan-header">
+                    <h3 style="color: #ef4444;"><i class="fas fa-times-circle"></i> WordPress Problems</h3>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-times" style="color: #ef4444;"></i>Slow loading times (3-8 seconds)</li>
+                    <li><i class="fas fa-times" style="color: #ef4444;"></i>Constant updates & maintenance</li>
+                    <li><i class="fas fa-times" style="color: #ef4444;"></i>Security vulnerabilities</li>
+                    <li><i class="fas fa-times" style="color: #ef4444;"></i>Plugin conflicts & crashes</li>
+                    <li><i class="fas fa-times" style="color: #ef4444;"></i>Poor mobile performance (30-50% bounce rate)</li>
+                    <li><i class="fas fa-times" style="color: #ef4444;"></i>Generic, template look</li>
+                    <li><i class="fas fa-times" style="color: #ef4444;"></i>Hidden ongoing costs</li>
+                </ul>
+            </div>
+            
+            <!-- Solution Side -->
+            <div class="pricing-plan popular">
+                <div class="plan-popular-badge">Our Solution</div>
+                <div class="plan-header">
+                    <h3><i class="fas fa-check-circle"></i> Hand-Coded Solution</h3>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i>Lightning fast (under 2 seconds)</li>
+                    <li><i class="fas fa-check"></i>Zero maintenance required</li>
+                    <li><i class="fas fa-check"></i>Rock-solid security</li>
+                    <li><i class="fas fa-check"></i>No plugins, no crashes</li>
+                    <li><i class="fas fa-check"></i>Perfect mobile experience (5% bounce rate)</li>
+                    <li><i class="fas fa-check"></i>100% custom design</li>
+                    <li><i class="fas fa-check"></i>All-inclusive pricing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing-plans">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <p style="color: #ff6b9d; font-weight: bold; font-size: 1.2rem; background: rgba(255, 107, 157, 0.1); padding: 1rem; border-radius: 10px; max-width: 600px; margin: 0 auto;">
+                ⚡ Limited Time: Only taking 5 new clients this month - secure your spot today
+            </p>
+        </div>
+        <h2 class="section-title">Get Your Professional Website Today</h2>
+        <p class="section-subtitle">Our most popular package - everything you need to attract customers online.</p>
+        <div class="single-pricing-container">
+            <!-- Core Package -->
+            <div class="pricing-plan popular">
+                <div class="plan-popular-badge">Most Popular</div>
+                <div class="plan-header">
+                    <h3>Core <i class="fas fa-rocket"></i></h3>
+                    <p>Our recommended package for growing businesses.</p>
+                </div>
+                <div class="plan-price"><sup>£</sup>49 <span class="price-term">/Monthly</span></div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-gift" style="color: #ffc107;"></i>🎁 **FREE Google My Business Setup (Worth £149)**</li>
+                    <li><i class="fas fa-check"></i>All-inclusive design & hosting</li>
+                    <li><i class="fas fa-check"></i>Up to 5 pages</li>
+                    <li><i class="fas fa-check"></i>Security monitoring & updates</li>
+                    <li><i class="fas fa-check"></i>Minor tweaks on request</li>
+                    <li><i class="fas fa-check"></i>24/7 Support</li>
+                </ul>
+                <a href="#calendly-booking" class="cta-button">Choose Core</a>
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(76, 175, 80, 0.1); border-radius: 10px; color: var(--text-light); text-align: center; font-size: 0.95rem;">
+                    💰 ROI Reality Check: Your entire year's investment is paid for with just one new customer<br>
+                    (Average trade job: £500-2000+)
+                </div>
+                <p class="plan-footnote">Initial setup fee of £49. Includes domain.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section style="background-color: var(--background-dark); padding: 4rem 5%; text-align: center;">
+        <h2 class="section-title">Trusted by UK Businesses</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; font-size: 1.2rem; color: var(--text-light);">
+                <p style="margin: 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>✓ 98/100 Google Speed Scores Guaranteed</p>
+                <p style="margin: 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>✓ Hand-coded HTML/CSS/JS (No WordPress bloat)</p>
+                <p style="margin: 0;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>✓ Trusted by UK small businesses across the country</p>
+            </div>
+        </div>
+        
+        <!-- Client Logos Bar -->
+        <div class="logo-bar">
+            <div class="logo-scroll">
+                <!-- First set of logos -->
+                <img src="logos/apexguard.jpg" alt="Apex Guard" class="logo-item">
+                <img src="logos/harrison.jpg" alt="Harrison" class="logo-item">
+                <img src="logos/boes.jpg" alt="BOES" class="logo-item">
+                <img src="logos/rctfencing.jpg" alt="RCT Fencing" class="logo-item">
+                <img src="logos/wrightflow.jpg" alt="Wright Flow" class="logo-item">
+                <img src="logos/strata.jpg" alt="Strata" class="logo-item">
+                <img src="logos/pave.jpg" alt="Pave" class="logo-item">
+                <img src="logos/tarra.jpg" alt="Tarra" class="logo-item">
+                <img src="logos/willow.jpg" alt="Willow" class="logo-item">
+                <img src="logos/rct2.jpg" alt="RCT2" class="logo-item">
+                <img src="logos/blackod.jpg" alt="Blackod" class="logo-item">
+                <img src="logos/canvas and hugh.jpg" alt="Canvas and Hugh" class="logo-item">
+                <!-- Duplicate set for seamless loop -->
+                <img src="logos/apexguard.jpg" alt="Apex Guard" class="logo-item">
+                <img src="logos/harrison.jpg" alt="Harrison" class="logo-item">
+                <img src="logos/boes.jpg" alt="BOES" class="logo-item">
+                <img src="logos/rctfencing.jpg" alt="RCT Fencing" class="logo-item">
+                <img src="logos/wrightflow.jpg" alt="Wright Flow" class="logo-item">
+                <img src="logos/strata.jpg" alt="Strata" class="logo-item">
+                <img src="logos/pave.jpg" alt="Pave" class="logo-item">
+                <img src="logos/tarra.jpg" alt="Tarra" class="logo-item">
+                <img src="logos/willow.jpg" alt="Willow" class="logo-item">
+                <img src="logos/rct2.jpg" alt="RCT2" class="logo-item">
+                <img src="logos/blackod.jpg" alt="Blackod" class="logo-item">
+                <img src="logos/canvas and hugh.jpg" alt="Canvas and Hugh" class="logo-item">
+            </div>
+        </div>
+        
+        <!-- Client Testimonials -->
+        <div style="margin-top: 4rem; max-width: 1200px; margin-left: auto; margin-right: auto; padding: 0 2rem;">
+            <h3 style="text-align: center; color: var(--text-light); margin-bottom: 3rem; font-size: 1.5rem;">What Our Clients Say</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(244, 114, 182, 0.05)); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(168, 85, 247, 0.2); box-shadow: 0 8px 32px rgba(168, 85, 247, 0.1); position: relative;">
+                    <div style="position: absolute; top: -10px; left: 2rem; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">⭐ 5 STARS</div>
+                    <div style="margin-top: 1rem;">
+                        <i class="fas fa-quote-left" style="font-size: 1.5rem; color: var(--primary-color); opacity: 0.6; margin-bottom: 1rem;"></i>
+                        <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 2rem; color: var(--text-light);">
+                            "Stellar Core Designs built us a website that loads in a flash and has already brought in <strong style="color: var(--secondary-color);">three new jobs</strong>. The best investment we've made this year."
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">JS</div>
+                            <div>
+                                <div style="color: var(--primary-color); font-weight: bold; font-size: 1.1rem;">John Smith</div>
+                                <div style="color: var(--text-light); opacity: 0.7;">Security Services, Apex Guard</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(244, 114, 182, 0.05)); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(168, 85, 247, 0.2); box-shadow: 0 8px 32px rgba(168, 85, 247, 0.1); position: relative;">
+                    <div style="position: absolute; top: -10px; left: 2rem; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">⭐ 5 STARS</div>
+                    <div style="margin-top: 1rem;">
+                        <i class="fas fa-quote-left" style="font-size: 1.5rem; color: var(--primary-color); opacity: 0.6; margin-bottom: 1rem;"></i>
+                        <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 2rem; color: var(--text-light);">
+                            "Finally, a website that actually works for my trade business. Fast, professional, and the <strong style="color: var(--secondary-color);">GMB setup brought in customers within weeks</strong>."
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">MH</div>
+                            <div>
+                                <div style="color: var(--primary-color); font-weight: bold; font-size: 1.1rem;">Mark Harrison</div>
+                                <div style="color: var(--text-light); opacity: 0.7;">Construction, Harrison Builders</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Booking Section -->
+    <section id="contact" style="background-color: var(--background-light);">
+        <h2 class="section-title">Book Your Free Consultation</h2>
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="desktop-consultation" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Left Column - Info -->
+                <div style="text-align: left;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.8rem;">Ready to Get More Customers?</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-light);">Let's discuss how a professional website can grow your business. Book a free 30-minute consultation to learn how we can help you attract more customers online.</p>
+                    
+                    <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                        <div style="background: rgba(168, 85, 247, 0.1); padding: 1rem; border-radius: 10px; flex: 1; text-align: center;">
+                            <i class="fas fa-clock" style="color: var(--primary-color);"></i><br>Available 7 days
+                        </div>
+                        <div style="background: rgba(168, 85, 247, 0.1); padding: 1rem; border-radius: 10px; flex: 1; text-align: center;">
+                            <i class="fas fa-phone" style="color: var(--primary-color);"></i><br>30-minute call
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: var(--text-light); margin-bottom: 1rem;">What We'll Discuss:</h4>
+                        <div style="display: grid; gap: 0.8rem;">
+                            <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Your current website challenges</div>
+                            <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>How to attract more customers online</div>
+                            <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Our £49.99/month solution</div>
+                            <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Next steps to get started</div>
+                        </div>
+                    </div>
+                    
+                    <div style="font-size: 0.9rem; color: var(--text-light); opacity: 0.8; padding: 1rem; background: rgba(76, 175, 80, 0.1); border-radius: 10px;">
+                        ✓ 100% free consultation ✓ No obligation ✓ We'll analyze your current website
+                    </div>
+                </div>
+                
+                <!-- Right Column - Calendly -->
+                <div id="calendly-booking">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/babypaddle/30min" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Layout -->
+        <div class="mobile-consultation" style="display: none; text-align: center; padding: 0 2rem;">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Ready to Get More Customers?</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Let's discuss how a professional website can grow your business. Book a free 30-minute consultation to learn how we can help you attract more customers online.</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+                    <div style="background: rgba(168, 85, 247, 0.1); padding: 1rem; border-radius: 10px; text-align: center;">
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i><br>Available 7 days
+                    </div>
+                    <div style="background: rgba(168, 85, 247, 0.1); padding: 1rem; border-radius: 10px; text-align: center;">
+                        <i class="fas fa-phone" style="color: var(--primary-color);"></i><br>30-minute call
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 2rem; text-align: left;">
+                    <h4 style="color: var(--text-light); margin-bottom: 1rem; text-align: center;">What We'll Discuss:</h4>
+                    <div style="display: grid; gap: 0.8rem;">
+                        <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Your current website challenges</div>
+                        <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>How to attract more customers online</div>
+                        <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Our £49.99/month solution</div>
+                        <div><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i>Next steps to get started</div>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-light); opacity: 0.8; padding: 1rem; background: rgba(76, 175, 80, 0.1); border-radius: 10px;">
+                    ✓ 100% free consultation ✓ No obligation ✓ We'll analyze your current website
+                </div>
+                
+                <div id="calendly-booking-mobile">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/babypaddle/30min" style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to main site link -->
+    <footer>
+        <p>&copy; 2024 Stellar Core Designs. All Rights Reserved. | <a href="/" style="color: var(--text-light); opacity: 0.6;">← Back to main site</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize particles.js
+        if (document.getElementById('particles-js') && typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 40,
+                        "density": {
+                            "enable": true,
+                            "value_area": 1200
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#A855F7",
+                        "opacity": 0.2,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 400,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 100,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+
+        // Handle consultation form submission
+        const consultationForm = document.getElementById('consultation-form-element');
+        const formResult = document.getElementById('form-result');
+        
+        if (consultationForm) {
+            consultationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(consultationForm);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
+                
+                formResult.style.display = 'block';
+                formResult.innerHTML = "Sending message...";
+                formResult.style.color = '#E0E0E0';
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let jsonResponse = await response.json();
+                    if (response.status == 200) {
+                        formResult.innerHTML = "Thank you! We'll be in touch soon.";
+                        formResult.style.color = '#4CAF50';
+                        
+                        // Track successful form submission
+                        if (typeof fbq !== 'undefined') {
+                            fbq('track', 'Lead');
+                        }
+                    } else {
+                        formResult.innerHTML = jsonResponse.message;
+                        formResult.style.color = '#F44336';
+                    }
+                })
+                .catch(error => {
+                    formResult.innerHTML = "Something went wrong!";
+                    formResult.style.color = '#F44336';
+                })
+                .then(function() {
+                    consultationForm.reset();
+                    setTimeout(() => {
+                        formResult.style.display = 'none';
+                    }, 5000);
+                });
+            });
+        }
+    });
+    </script>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4114775495462340');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4114775495462340&ev=PageView&noscript=1"
+    /></noscript>
+</body>
+</html>

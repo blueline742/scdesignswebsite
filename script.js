@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function() {
         particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 80,
+                    "value": 40,
                     "density": {
                         "enable": true,
-                        "value_area": 800
+                        "value_area": 1200
                     }
                 },
                 "color": {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 "move": {
                     "enable": true,
-                    "speed": 2,
+                    "speed": 1,
                     "direction": "none",
                     "random": false,
                     "straight": false,
